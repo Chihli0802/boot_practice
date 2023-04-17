@@ -1,50 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <!-- boot -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- boot -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- css -->
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-   <!-- header -->
-   <header>
-    <div class="logo"></div>
-    <div class="guide">
+  <!-- header -->
+  <header>
+    <div class="area1"></div>
+
+    <div class="area2">
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+
+        <button id="left"  type="button" class="btn btn-outline-primary">
+          <a class="a1" href="">会社案内</a>
+        </button>
         
-        <button type="button"></button>
-        <button type="button"></button>
-    </div>
-    <div class="login"></div>
-   </header>
-    <!-- 輪播 -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./pic/banner1.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./pic/banner2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./pic/banner3.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        
+        <button  type="button" class="btn btn-outline-primary">
+          <a class="a2" href="">店舗．アクセス</a>
+        </button>
+
       </div>
+    </div>
+
+    <div class="area3">
+      <div class="phone">
+        <i class="fa-solid fa-phone"></i>
+        <p>101-123456789</p>
+      </div>
+      <div class="btn-group" role="group" aria-label="Basic outlined example">
+
+        <button type="button" class="btn btn-outline-primary">
+          <a href="">ログイン</a>
+        </button>
+
+        <button type="button" class="btn btn-outline-primary">
+          <a href="">お問い合わせ</a>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 輪播 -->
+  <div class="picArea"></div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./pic/banner1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./pic/banner2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./pic/banner3.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer>
+    <div class="outSide">
+      <button type="button" class="btn btn-primary btn-lg">
+        <a class="a1" href=""> タッグから探す</a>
+      </button>
+
+      <button type="button" class="btn btn-primary btn-lg">
+        <a class="a2" href="">エリアから探す</a>
+        
+      </button>
+
+      <button type="button" class="btn btn-primary btn-lg">
+        <a class="a2" href="">沿線．駅から探す</a>
+        
+      </button>
+    </div>
+  </footer>
 
 
-
-     <!-- js 貼在最底下 -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!-- js 貼在最底下 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

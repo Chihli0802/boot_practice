@@ -1,0 +1,125 @@
+body{
+    padding: 0;
+
+    //固定畫面，無卷軸
+    width: 100vw;
+    height: 100vh;
+    margin: 0 0;
+
+}
+
+header{
+    @media (max-width:768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 40px;
+    .area1{
+        background-color: rgb(71, 125, 141);
+        width: 100px;
+        height: 100px;
+    }
+
+    
+    .area2{
+      
+        .btn-group{
+            button{
+              border: none;
+              
+                &:hover {
+                background-color: rgb(62, 93, 105);
+                color: white;
+                }
+
+                .a1,.a2{
+                    //超連結字體顏色
+                    color: rgb(0, 0, 0);
+                    //將超連結底線去掉
+                    text-decoration: none;
+                    &:hover {
+                        color: white;
+                        }
+
+                }
+            }
+        }
+    }
+         
+                    
+    .area3{
+        @media(max-width:768px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        display: flex;
+        align-items: baseline;
+
+        .phone{
+            margin-right: 10px;
+            display: flex;
+            position: relative;
+            p{
+                margin-bottom: 0;
+            }
+            i{
+                font-size: 10px;
+                position: absolute;
+                top:6px;
+                left:-15px;
+            }
+        }
+        .btn-group{
+            button{
+                background-color:rgb(71, 125, 141) ;
+                border: none;
+                color:white;
+                &:hover {
+                    background-color: rgb(62, 93, 105);
+                    border-color:rgb(62, 93, 105);
+                    }
+                a{
+                    //超連結字體顏色
+                    color: rgb(255, 255, 255);
+                    //將超連結底線去掉
+                    text-decoration: none;
+                }
+            }
+        }
+       
+    }
+}
+    
+.login_body{
+    margin-top: 30px;
+    background-color:rgb(71, 125, 141);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 440px;
+    .area{
+        margin-top: 30px;
+        .email,.namePassword{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .keepandlog{
+            margin-top: 30px;
+            display: flex;
+        }
+    }
+
+    .btnbox{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+    
